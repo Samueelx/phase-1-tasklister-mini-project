@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const button = document.querySelector('#create-task-form :nth-child(3)');
+  const button = document.querySelector('form');
   const input = document.querySelector('#create-task-form :nth-child(2)');
   const ul = document.querySelector('#tasks');
   
-  button.addEventListener("click", (e) => {
+  button.addEventListener("submit", (e) => {
     e.preventDefault();
     if(input.value !== ""){
       const li = document.createElement('li');
